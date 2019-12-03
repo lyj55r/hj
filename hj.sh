@@ -2,18 +2,6 @@
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 
-#+---------------------------------------------------------+
-#|                                                         |
-#|                      懒人专用                           |
-#|                                                         |
-#|  加速系列：Bbr系列、KCPtun、锐速                        |
-#|  代理系列：V2ary、ssr、Tg专用代理、Goflyway             |
-#|  性能测试：superbench、回程线路测试                     |
-#|  监控系列：云监控（status）                             |
-#|  DD系列：傻瓜式一键DD包                                 |
-#|  脚本来源于网络，版权归各位所有                         |
-#|                                                         |
-#+---------------------------------------------------------+
 
 sh_ver="2.0.0"
 
@@ -80,27 +68,31 @@ DD_OD(){
 DD_OD(){
 	wget -N --no-check-certificate https://raw.githubusercontent.com/veip007/dd/master/dd-gd.sh && chmod +x dd-gd.sh  && ./dd-gd.sh
 }
-check_sys
 action=$1
 if [[ "${action}" == "monitor" ]]; then
 	crontab_monitor_goflyway
 else
-echo && echo -e "  懒人专用  小鸡一键管理脚本 ${Red_font_prefix}[v${sh_ver}]${Font_color_suffix}
-  -- 一键在手 小鸡无忧 --
-  -- 欢迎提交 一键脚本 --
+echo && echo -e " 
++-------------------------------------------------------------+
+|                          懒人专用                           |
+|                 小鸡一键管理脚本 ${Red_font_prefix}[v${sh_ver}]${Font_color_suffix}                   |                      
+|                     一键在手小鸡无忧                        |
+|                     欢迎提交一键脚本                        |
++-------------------------------------------------------------+
+
   
  ${Green_font_prefix} 0.${Font_color_suffix} 升级脚本
 ————————————
  ${Green_font_prefix} 1.${Font_color_suffix} 加速系列：Bbr系列、锐速
  ${Green_font_prefix} 2.${Font_color_suffix} 安装谷歌 BBR2 BBRV2
  ${Green_font_prefix} 3.${Font_color_suffix} 安装KCPtun
-————————————
  ${Green_font_prefix} 4.${Font_color_suffix} 安装SSR多用户版
+ ————————————
  ${Green_font_prefix} 5.${Font_color_suffix} 安装V2ary_233一键
  ${Green_font_prefix} 6.${Font_color_suffix} Tg专用代理（Go版）
-————————————
  ${Green_font_prefix} 7.${Font_color_suffix} 安装Goflyway
  ${Green_font_prefix} 8.${Font_color_suffix} 小鸡性能测试
+ ————————————
  ${Green_font_prefix} 9.${Font_color_suffix} 回程线路测试:命令:./huicheng 您的IP
  ${Green_font_prefix}10.${Font_color_suffix} 云监控
  ${Green_font_prefix}11.${Font_color_suffix} 傻瓜式一键DD包（OD源）

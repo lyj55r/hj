@@ -15,7 +15,7 @@ export PATH
 #|                                                         |
 #+---------------------------------------------------------+
 
-sh_ver="1.1.11"
+sh_ver="2.0.0"
 
 
 
@@ -86,7 +86,8 @@ if [[ "${action}" == "monitor" ]]; then
 	crontab_monitor_goflyway
 else
 echo && echo -e "  懒人专用  小鸡一键管理脚本 ${Red_font_prefix}[v${sh_ver}]${Font_color_suffix}
-  -- Toyo | doub.io/goflyway-jc2 --
+  -- 一键在手 小鸡无忧 --
+  -- 欢迎提交 一键脚本 --
   
  ${Green_font_prefix} 0.${Font_color_suffix} 升级脚本
 ————————————

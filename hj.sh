@@ -65,7 +65,7 @@ DD_OD(){
 	wget -N --no-check-certificate https://raw.githubusercontent.com/veip007/dd/master/dd-od.sh && chmod +x dd-od.sh  && ./dd-od.sh
 }
 #12一键DD包（GD源）
-DD_OD(){
+DD_GD(){
 	wget -N --no-check-certificate https://raw.githubusercontent.com/veip007/dd/master/dd-gd.sh && chmod +x dd-gd.sh  && ./dd-gd.sh
 }
 action=$1
